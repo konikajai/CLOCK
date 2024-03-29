@@ -24,7 +24,7 @@ section {
     width: 350px;
     height: 350px;
     border-radius: 50%;
-    background-image: url("/ASSETS/watch.png");
+    background-image: url("../ASSETS/watch.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
