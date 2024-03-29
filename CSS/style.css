@@ -1,0 +1,159 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+h1{
+    font-size: 40px;
+    letter-spacing: 7px;
+    text-shadow: 2px 2px 8px #0e5f85;
+}
+section {
+    width: 350px;
+    height: 350px;
+    border: 3px solid black;
+    background: linear-gradient(rgb(1, 33, 46), rgb(19, 58, 65), rgb(11, 82, 104));
+}
+
+/* CSS FOR ANALOG CLOCK */
+#analog_clock {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background-image: url("/ASSETS/watch.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+.circle1 {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 160px;
+    left: 163px;
+}
+.circle2 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    top: 6px;
+    left: 6px;
+}
+.container1,.container2,.container3{
+    position: absolute;
+    left: 32px;
+    top: 29px;
+    height: 290px;
+    width: 290px;
+    border-radius: 50%;
+    opacity: 0.3;
+}
+.arrow1 {
+    width: 7px;
+    height: 50px;
+    background-color: blue;
+    position: relative;
+    left: 140px;
+    top: 85px;
+}
+.arrow2 {
+    width: 5px;
+    height: 70px;
+    background-color: green;
+    position: relative;
+    left: 140px;
+    top: 65px;
+}
+.arrow3 {
+    width: 5px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    left: 140px;
+    top: 33px;
+}
+
+/* CSS FOR DIGITAL CLOCK */
+#digital_clock {
+    position: relative;
+    top: 210px;
+    left: 130px;
+    display: flex;
+}
+.for_hour,.for_minute,.for_second,.colon1,.colon2,.for_ampm{
+    margin: 2px;
+    color: rgb(14, 71, 92);
+    font-weight: 5px;
+    font-size: 20px;
+    text-shadow: 2px 2px 8px #64156e;
+}
+.for_ampm {
+    margin: 7px 0px 0px 5px;
+    font-size: 10px;
+}
+
+@media only screen and (min-width:0px) and (max-width:600px) {
+    section {
+        width: 250px;
+        height: 250px;
+    }
+    #analog_clock {
+        width: 230px;
+        height: 230px;
+        left: 10px;
+        top: 10px;
+    }
+    .circle1 {
+        width: 25px;
+        height: 25px;
+        left: 105px;
+        top: 102px;
+    }
+    .container1,.container2,.container3
+    {
+        left: 16px;
+        top: 15px;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;  
+    }
+    .arrow1 {
+        height: 40px;
+        left: 99px;
+        top: 50px;
+    }
+    .arrow2 {
+        height: 50px;
+        left: 99px;
+        top: 38px;
+    }
+    .arrow3 {
+        height: 70px;
+        left: 99px;
+        top: 20px;
+    }
+    #digital_clock {
+        top: 135px;
+        left: 80px;
+    }
+    .for_hour,.for_minute,.for_second,.colon1,.colon2,.for_ampm {
+        margin: 1px;
+        color: rgb(14, 71, 92);
+        font-weight: 5px;
+        font-size: 15px;
+        text-shadow: 2px 2px 8px #64156e;
+    }
+    .for_ampm {
+        margin: 7px 0px 0px 5px;
+        font-size: 9px;
+    }
+}
